@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script src="jquery-2.0.0.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="jquery-blink.js"></script>
+<script type='text/javascript' src='appManager.js'></script>
+
+<title>KITT</title>
+</head>
+
+<body>
+
+    <div class="logo">∫K</div>
+    
+<div class="menu">
+		<div class="icon" id="func1"><img src="icons/reguladores.png" class="iconimg" id="func1Ico"/></div>
+        <div class="subtitle" id="sub1">Reguladores</div> 
+        <div class="icon" id="func2"><img src="icons/controladores.png" class="iconimg" id="func2Ico"/></div>
+        <div class="subtitle" id="sub2">Controladores</div> 
+        <div class="icon" id="func3"><img src="icons/car-info.png" class="iconimg" id="func3Ico" /></div> 
+        <div class="subtitle" id="sub3">Informações do carro</div> 
+        <div class="icon" id="func4"><img src="icons/detetores_interiores.png" class="iconimg" id="func4Ico" /></div>
+        <div class="subtitle" id="sub4">Detetores Interiores</div>
+        <div class="icon" id="func5"><img src="icons/det-obst.png" class="iconimg"  id="func5Ico"/></div>
+        <div class="subtitle" id="sub5">Detetores Exteriores</div>
+ 		<div class="icon" id="func6"><img src="icons/tool.png" class="iconimg" id="func6Ico"/></div>
+        <div class="subtitle" id="sub6">Definições</div>
+</div>
+
+<div class="submenu">
+		<div class="icon" id="func1_1" style="visibility:hidden"><img src="icons/luzes.png" class="iconimgsub" id="func1_1Ico"/></div>
+        <div class="subsubtitle" id="sub1_1">Luzes</div>
+        <div class="icon" id="func1_2" style="visibility:hidden"><img src="icons/portas.png" class="iconimgsub" id="func1_2Ico"/></div>
+        <div class="subsubtitle" id="sub1_2">Portas</div>
+        <div class="icon" id="func1_3" style="visibility:hidden"><img src="icons/vidros.png" class="iconimgsub" id="func1_3Ico"/></div>
+        <div class="subsubtitle" id="sub1_3">Vidros</div>
+        <div class="icon" id="func2_1" style="visibility:hidden"><img src="icons/radio.png" class="iconimgsub" id="func2_1Ico"/></div>
+        <div class="subsubtitle" id="sub2_1">Rádio</div>
+        <div class="icon" id="func2_2" style="visibility:hidden"><img src="icons/ar_condicionado.png" class="iconimgsub" id="func2_2Ico"/></div>
+        <div class="subsubtitle" id="sub2_2">Ar Condicionado</div>
+        <div class="icon" id="func2_3" style="visibility:hidden"><img src="icons/piloto_automatico.png" class="iconimgsub" id="func2_3Ico"/></div>
+        <div class="subsubtitle" id="sub2_3">Piloto Automático</div>
+    	<div class="icon" id="func3_1" style="visibility:hidden"><img src="icons/car_info_details.png" class="iconimgsub" id="func3_1Ico"/></div>
+        <div class="subsubtitle" id="sub3_1">Informações gerais</div>
+     	<div class="icon" id="func3_2" style="visibility:hidden"><img src="icons/car_info_geral.png" class="iconimgsub" id="func3_2Ico"/></div>
+        <div class="subsubtitle" id="sub3_2">Informações detalhadas</div>
+     	<div class="icon" id="func4_1" style="visibility:hidden"><img src="icons/distracted.png" class="iconimgsub" id="func4_1Ico"/></div>
+        <div class="subsubtitle" id="sub4_1">Detetor de distração</div>
+        <div class="icon" id="func4_2" style="visibility:hidden"><img src="icons/sleepy.png" class="iconimgsub" id="func4_2Ico"/></div>
+        <div class="subsubtitle" id="sub4_2">Detetor de sonolência</div>
+    	<div class="icon" id="func5_1" style="visibility:hidden"><img src="icons/square_detector.png" class="iconimgsub" id="func5_1Ico"/></div>
+        <div class="subsubtitle" id="sub5_1">Detetor por vídeo</div>
+    	<div class="icon" id="func5_2" style="visibility:hidden"><img src="icons/ir_detector.png" class="iconimgsub" id="func5_2Ico"/></div>
+        <div class="subsubtitle" id="sub5_2">Detetor por infravermelhos</div>
+      	<div class="icon" id="func6_1" style="visibility:hidden"><img src="icons/user.png" class="iconimgsub" id="func6_1Ico"/></div>
+        <div class="subsubtitle" id="sub6_1">Informação do utilizador</div>
+     	<div class="icon" id="func6_2" style="visibility:hidden"><img src="icons/star.png" class="iconimgsub" id="func6_2Ico"/></div>
+        <div class="subsubtitle" id="sub6_2">Favoritos</div>
+      	<div class="icon" id="func6_3" style="visibility:hidden"><img src="icons/about.png" class="iconimgsub" id="func6_3Ico"/></div>
+        <div class="subsubtitle" id="sub6_3">Acerca deste sistema</div>
+        <div class="icon" id="func6_4" style="visibility:hidden"><img src="icons/turn_on_off.png" class="iconimgsub" id="func6_4Ico"/></div>
+        <div class="subsubtitle" id="sub6_4">Desligar</div>
+</div>
+    
+<div class="alerts">
+  <div class= "alert" id="alert_d"  style="visibility:hidden" ><img src="icons/distracted_sign.png" class="alert_img"/></div>
+   	 	 <div class ="alert" id="alert_s"  style="visibility:hidden"><img src="icons/sleepy_sign.png" class="alert_img"/></div>
+</div>
+    
+<div class="funcs_actives">
+   	  <div id="f_a_4_1" style="visibility:hidden"><img src="icons/distracted_active.png" class="f_a_img"/></div>
+      <div id="f_a_4_2" style="visibility:hidden"><img src="icons/sleepy_active.png" class="f_a_img"/></div>
+      <div id="f_a_5_1"><img src="icons/square_detector_active.png" class="f_a_img"/></div>
+      <div id="f_a_5_2"><img src="icons/ir_detector_active.png" class="f_a_img"/></div>
+</div>
+    
+<div class="informations_detail">
+  <div class="info" id="info_detail_u" style="visibility:hidden"><img src="icons/info_details_uncheck.png" class="info_detail_img"/></div>
+   <div class="info" id="info_detail_c" style="visibility:hidden"><img src="icons/info_details_check.png" class="info_detail_img"/></div>
+</div>
+
+  <div id="text_details">&nbsp;&nbsp;<u>Observações:</u><br>&nbsp;&nbsp;-&nbsp;Airbag frontal do passageiro necessita de reparo;&nbsp;e<br>&nbsp;&nbsp;-&nbsp;Airbag lateral direito traseiro necessita de reparo.</div>
+
+<div class="informations_all" style="visibility:hidden">
+	 <div class="icon_info" id="info_all_1"><img src="icons/gas_tank_o.png" class="icon_info_img" id="info1"/></div>
+ 	<div class="icon_info" id="info_all_2"><img src="icons/tire_pressure_o.png" class="icon_info_img" id="info2"/></div>
+ 	<div class="icon_info" id="info_all_3"><img src="icons/battery_o.png" class="icon_info_img" id="info3"/></div>
+ 	 <div class="icon_info" id="info_all_4"><img src="icons/temperature.png" class="icon_info_img" id="info4"/></div>
+  </div>
+  
+<div class="detectors">
+    <div class="square" id="s1"></div>
+    <div class="square" id="s2"></div>
+    <div class="square" id="s3"></div>
+  	<div class="square" id="s4"></div>
+  	<div class="square" id="s4"></div>
+  	<div class="square" id="s5"></div>
+	<div class="square" id="s6"></div>
+	<div class="square" id="s7"></div>
+  	<div class="square" id="s8"></div>
+  	<div class="square" id="s9"></div>
+    <div class="squareNight" id="s10"></div>
+    <div class="squareNight" id="s11"></div>
+  <div class="squareNight" id="s12"></div>
+  
+</div>
+
+<div id="ir_warning"><span id="title_warning"><u>Aviso</u></span><br>Conduza com precaução.</div>
+
+<div class="favorites" style="display:none;">
+	<img src="icons/fav_conf.png" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; z-index:0"/><img id="selected" src="icons/fav_no_selected.png" style="width: 100%; height: 100%; position: relative; top: -100%; z-index: 1;"/>
+  <div id="fav1"><img id="fav1_img" src="icons/help.png" style="width: 100%; height: 100%;" /> </div>
+  <div id="fav2"><img id="fav2_img" src="icons/help.png" style="width: 100%; height: 100%;" /></div>
+  <div id="fav3"><img id="fav3_img" src="icons/help.png" style="width: 100%; height: 100%;" /></div>
+  
+</div>
+
+<div id="about_system">
+	<br>
+    <span id="about_text">&nbsp;KITT® é um sistema inteligente de auxílio à condução que permite regular e controlar funcionalidades do veículo, bem como disponibiliza informações úteis ao condutor.<br><br>	
+    &nbsp;Este sistema foi desenvolvido por alunos do Instituto Superior Técnico da Licenciatura em Engenharia Informática e de Computadores para a cadeira de Interfaces Pessoa-Máquina.<br><br>
+	&nbsp;Qualquer sugestão ou erro, agradecemos que seja reportado para o e-mail da instituição de um dos criadores deste sistema.</span>
+    <br><br>
+	➤&nbsp;Tomás Alves - 75541
+    <br>
+	➤&nbsp;Andriy Zabolotnyy - 75624
+    <br>
+	➤&nbsp;Tiago Rechau - 76231
+</div>
+
+<div id="info_user">
+	<img src="personal_info/darth_vader_pass.png" id="info_darth_vader"/>
+</div>
+
+<div id="notImplemented"><h1>Funcionalidade não implementada</h1></div>
+ 
+ <div id="help" style="display:none"  >
+ 	<div id="h_base"  >Pressione a tecla direita para começar a navegar pelo menu com a ajuda ativa. Prima novamente a tecla de ajuda no ambiente de trabalho para a desativar.</div>
+    <div id="h_1"  >Permitem regular diversos factores usuais num carro.</div>
+ 	<div id="h_1_1"  >Permite regular a intensidade de luz interior do carro.</div>
+    <div id="h_1_2"  >Permite trancar ou destrancar as portas.</div>
+    <div id="h_1_3"  >Permite regular a abertura dos vidros do carro.</div>
+    <div id="h_2"  >Permitem controlar diversas funcionalidades do carro.</div>
+    <div id="h_2_1"  >Permite controlar o rádio integrado no carro.</div>
+    <div id="h_2_2"  >Permite controlar a intensidade e temperatura do ar condicionado.</div>
+    <div id="h_2_3"  >Permite ativar ou desativar o piloto automático, bem como configurá-lo.</div>
+    <div id="h_3"  >Permite obter informações sobre o seu veículo.</div>
+    <div id="h_3_1"  >Permite obter informações sobre o depósito de combustível, a pressão dos pneus, a bateria e a temperatura do radiador.</div>
+    <div id="h_3_2"  >Permite obter informações acerca do estado dos airbags, ABS e a qualidade do óleo, bem como oferece observações específicas.</div>
+    <div id="h_4"  >Detetores interiores para garantir a atenção total durante a condução.</div>
+    <div id="h_4_2"  >Detetor que deteta a sonolência do condutor e o desperta.</div>
+    <div id="h_4_1"  >Detetor que deteta a distração do condutor e o avisa.</div>
+    <div id="h_5"  >Detetores exteriores para representar obstáculos exteriores e auxiliar na condução.</div>
+    <div id="h_5_1"  >Detetor que coloca dentro de rectângulos todos os obstáculos em movimento próximos.</div>
+    <div id="h_5_2"  >Detetor que trata de colorir os obstáculos em movimento de acordo com a sua proximidade ao veículo.</div>
+    <div id="h_6"  >Conjunto de mais ferramentas do sistema.</div>
+    <div id="h_6_1"  >Permite visualizar dados do utilizador do sistema e do veículo.</div>
+    <div id="h_6_2"  >Permite alterar e gerir os favoritos.</div>
+    <div id="h_6_3"  >Informação útil acerca do sistema KITT.</div>
+    <div id="h_6_4"  >Permite desligar o sistema.</div>
+    <div id="help_fav"  >Navegue pelo menu e defina a funcionalidade que quer usar na posição escolhida do menu de favoritos.</div>
+ </div>
+<div id="turnoff_confirme">
+	<div id="question"><u>Tem a certeza que pretende desligar o sistema?</u></div>
+	<span id="question_more">Pressione a tecla OK para confirmar e a tecla de retroceder em caso contrário.<br>Caso deseje reiniciar o sistema, prima três vezes a tecla OK.</span>
+</div>
+<div id="date"></div>
+<div id="time"></div>
+<audio id='sound'><source src='sound.mp3'></source></audio>
+
+</body>
+</html>
