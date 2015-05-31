@@ -35,7 +35,7 @@ Functionality: 8,8/10
 Prototype: 17,30/20  
 Report: 14,10/16  
 Screen Design: 8/8  
-Theme exploration: 0,5/2
+Theme exploration: 0,5/2  
 User Guide: 3,4/4  
 
 ***
